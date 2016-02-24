@@ -12,11 +12,11 @@
     <title>Linda Holmberg</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="css/one-page-wonder.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -24,146 +24,165 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-
     <body>
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navheader">
-                   <a class="navbar-brand" href="#">Swedesign</a>
-               </div>
-
-
-
-               <!-- Collect the nav links, forms, and other content for toggling -->
-               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#about">About me</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Porfolie</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/lindaholmberg">github</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/linda-holmberg-7759aa115?trk=nav_responsive_tab_profile">linked</a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UC3oR7bCW50fbFWRLlLMDfuA">youtube</a>
-                    </li>
-                </ul>
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#softheart">Softheart</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right ">
+                            <li ><a href="#about">About me</a>
+                            </li>
+                            <li><a href="#design">Design</a>
+                            </li>
+                            <li><a href="#porfolie">Porfolie</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
             </div>
-            <!-- /.navbar-collapse -->
-
+        </nav>
+        <!---Carusel-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/slide1.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/slide1.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/slide1.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <!-- /.container -->
-    </nav>
-    <!-- Header -->
-    <header  class="text-center">
-        <h1>Linda Holmberg</h1><small> Webdeveloper - Designer. </small>
-    </header>
-    <hr class="featurette-divider">
-    <!--First Featurette-->
-    <div class="featurette" id="about">
-        <img class="featurette-image img-circle img-responsive pull-right" src="img/profilbildlinda.jpg">
-        <h2 class="featurette-heading"> About me
+        
+        <!--First Featurette-->
+        <hr class="featurette-divider">
+        <div class="continer">
+            <div class="row" id="FirstFeaturette">
+                <div class="col-lg-12">
+                    <img class="featurette-image img-circle img-responsive pull-right" src="img/linda.jpg">
+                    <h2 class="featurette-heading"> About me
             <span class="text-muted">" - Do what you dream about. ".</span>
         </h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        
-    </div>
-
-    <hr class="featurette-divider">
-    <!-- Second Featurette -->
-    <div class="featurette" id="services">
-        <img class="featurette-image img-circle img-responsive pull-left" src="img/pic2.jpg">
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+            </div> 
+        </div>  
+        <!-- Second Featurette -->
+        <hr class="featurette-divider">
+        <div class="continer">
+            <div class="row" id="SecondFeaturette">
+                <div class="col-lg-12">
+         <img class="featurette-image img-circle img-responsive pull-left" src="img/pic2.jpg">
         <h2 class="featurette-heading">Cretiv and Design
             <span class="text-muted">" - Color makes life more fun! ".</span>
         </h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!-- Third Featurette -->
-    <div class="featurette" id="porfolie">
-        <img class="featurette-image img-circle img-responsive pull-right" src="img/pic3.jpg">
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+            </div> 
+        </div>   
+        <!-- Third Featurette -->
+   <hr class="featurette-divider">
+        <div class="continer">
+            <div class="row" id="ThirdFeaturette">
+                <div class="col-lg-12">
+         <img class="featurette-image img-circle img-responsive pull-right" src="img/pic3.jpg">
         <h2 class="featurette-heading">Porfolie
             <span class="text-muted">" - Be inspired of my creations. ".</span>
         </h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        <a class="btn btn-info" href="#" role="button">Link</a>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <!--contact form-->
-    <form role="form" action="" method="post" >
-        <div class="col-lg-6">
-          <div class="form-group">
-            <label for="InputName">Your Name</label>
-            <div class="input-group">
-              <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
-              <span class="input-group-addon"></span></div>
-          </div>
-          <div class="form-group">
-            <label for="InputEmail">Your Email</label>
-            <div class="input-group">
-              <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
-              <span class="input-group-addon"></span></div>
-          </div>
-          <div class="form-group">
-            <label for="InputMessage">Message</label>
-            <div class="input-group"
-            >
-            <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-            <span class="input-group-addon"></span></div>
+                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                </div>
+            </div> 
+        </div>  
+        <!--Contact form-->
+        <hr class="featurette-divider">
+        <div class="container">
+            <div class="row">
+                <div class="form-box">
+                    <h1>Contact me</h1>
+                    <form role="form" id="contact-form">
+                        <!-- name field -->
+                        <div class="form-group">
+                            <div id="nameError" class="sr-only" role="alert"></div>
+                            <label for="form-name-field" class="sr-only">Name</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                                <input type="text" class="form-control" id="form-name-field" value="" placeholder="Name">
+                            </div>
+                        </div>
+                        <!-- email field -->
+                        <div class="form-group">
+                            <div id="emailError" class="sr-only" role="alert"></div>
+                            <label for="form-email-field" class="sr-only">Email</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                                <input type="email" class="form-control" id="form-email-field" value="" placeholder="Email">
+                            </div>
+                        </div>
+                        <!-- phone field -->
+                        <div class="form-group">
+                            <div id="phoneError" class="sr-only" role="alert"></div>
+                            <label for="form-phone-field" class="sr-only">Phone</label>
+                            <div class="input-group">
+                                <div class="input-group-addon"><span class="glyphicon glyphicon-earphone"></span></div>
+                                <input type="tel" class="form-control" id="form-phone-field" value="" placeholder="Phone">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-info">Submit</button>
+                    </form>   
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
-            <div class="input-group">
-              <input type="text" class="form-control" name="InputReal" id="InputReal" required>
-              <span class="input-group-addon"></span></div>
-          </div>
-          <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
-      </div>
-  </form>
-  <hr class="featurette-divider hidden-lg">
-  <div class="col-lg-5 col-md-push-1">
-    <address>
-        <h3>Office Location</h3>
-        <p class="lead"><a href="https://www.google.ch/maps/place/Z%C3%BCrich/@47.3773697,8.3966319,11z/data=!3m1!4b1!4m2!3m1!1s0x47900b9749bea219:0xe66e8df1e71fdc03">Swedesign<br>
-            Switzerland, Zurich 8001</a><br>
-            Phone: XXX-XXX-XXXX</p>
-        </address>
-    </div>
-</div>
 
 
-<hr class="featurette-divider">
-
-<!-- Footer -->
-<footer>
-    <div class="row text-center">
-        <div class="col-lg-12">
-            <p>Swedesign &copy; Linda Holmberg 2016</p>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container text-center">
+                <a href=""><i class="fa fa-github  fa-2x"></i></a>
+                <a href=""><i class="fa fa-youtube fa-2x"></i></a>
+                <a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+            </span>
+            <p class=" text-muted credit">Copyright 2016 Linda Holmberg </p>
         </div>
-    </div>
-</footer>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-</div>
-<!-- /.container -->
-
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
 
 </body>
 

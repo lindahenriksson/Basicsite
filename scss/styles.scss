@@ -2,92 +2,87 @@
 $pink: #c85b86;
 $gold: #c89c5b;
 $green: #5bc89c;
-$blue: #5b86c8;
+$blue: #00BCD4;
 
-$primary-color: $pink;
-$secondary-color-1: $blue;
+$primary-color: $blue;
+$secondary-color-1: $pink;
 $secondary-color-2: $gold;
 $complement-color: $green;
 
+$font-stack: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;;
+
+
 body {
-    background-image: url("img/profilbildlinda.jpg");
-    font-family: Verdana;
-    font-size: 16px;
-    color: $green;
-}
+  padding: 20px;
+  color: black;
+  font-family: $font-stack;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
 
-.info-box {
-    h2 {
+  #navbar{
+
+    li{
+      a{
         color: $primary-color;
+      }
     }
+   }
 
-    .btn {
-        background-color: $blue;
-        color: $gold;
-    }
-}
 
-/*
-#navbar{
+  #SecondFeaturette{
+    background-color: $primary-color;
+   }
 
-font-family: Verdana;
-font-size: 16px;
 
-}
-
-.jumbotron{
-background-color: #DAA520;
-font-family: Verdana;
-font-size: 16px;
-color: #406C7F;
-}
-.container.jumbotron.h1{
-  color:#DAA520;  
-}
-#mywork
-{background-color: #80D8FF;
-font-family: Verdana;
-font-size: 16px;
-color: #DAA520;
-}
-#portfolio{
-   color: #406C7F; 
-   font-family: Verdana;s
-    font-size: 16px;
-    background-color: #80D8FF;
-}
-#contact{
-    background-color: #80D8FF;
-font-family: Verdana;
-font-size: 16px;
-color: #406C7F;
-}
-}
-.panel-body{
-	padding-top: 0;
-}
-.featuredImg {
-	margin-bottom: 15px;
-	width: 100%;
+  .form-box {
+    width: 50%;
+    margin: auto;
+    padding-top:20px;
 }
 
-div.img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
-}	
-
-div.img:hover {
-    border: 1px solid #777;
-}
-
-div.img img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
+.form-box h1 {
     text-align: center;
-}*/
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $primary-color;
+
+.form-box h1 span {
+    font-weight: lighter;
+}
+
+}
+.page-header{
+  color: $primary-color;
+}
+
+header{
+	h1,p{ 
+		color: $primary-color;
+    font-family:$font-stack; 
+    font-size: 20px;
+	}
+}
+
+footer{
+
+  padding-top: 60px;
+  margin-bottom: 0px;
+}
+.featurette-divider{
+  color: $secondary-color-2;
+}
+
+.text-muted{
+  color: $primary-color;
+}
+}
+
+
+
+
+
+
+ 
